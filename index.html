@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workiy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap');
+    html{
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .page1{
+        max-height: 100%;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;   
+      line-height: 1.6;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      padding: 20px 5%;
+      background: #fff;
+
+    }
+
+    nav a {
+      margin: 10px 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 5%;
+      background-image: url("https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+    }
+
+    .main-text {
+      max-width: 500px;
+    }
+
+    .main-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .main-text p {
+
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .main-img img {
+      max-width: 100%;
+      
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      background-color: #f8f9ff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      padding-top: 50px;
+    }
+
+    .section-content{
+        color:#808080;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+      }
+
+    .frames{
+        /* width: 1524; */
+        /* height: 554; */
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #F0F3FF;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+      }
+
+    .frames  :hover{
+        transform: scale(1.1);
+        transition: transform 0.4s ease-in-out;
+        cursor: pointer;  
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+     
+    }
+    /* .frames img{
+      width: 25%;
+    } */
+
+    .pvt{
+        font-weight: 600;
+        font-size: 12px;
+        color: #212529;
+    }
+
+    .employee{
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+
+    }
+    
+    .flex_right{
+      display: flex;
+      justify-content:space-between;
+      text-align: right;
+      margin: 25px;
+      padding:25px;
+      padding-left: 100px;
+      padding-right: 100px;
+      border-radius: 10px;
+      box-shadow: 18px 15px 15px 18px #B8C6FF40;
+    }
+
+    .flex_left{
+
+      display: flex;
+      justify-content:space-between;
+      text-align:left;
+      margin: 25px;
+      padding:25px;
+      padding-left: 100px;
+      padding-right: 100px;
+      border-radius: 10px;
+      box-shadow: 18px 15px 15px 18px #B8C6FF40;
+    }
+
+    .top{ 
+      font-weight: 700;
+      font-size: 17px;
+      color: #212529;
+    }
+    
+    .firstline{
+      font-weight: 700;
+      font-size: 20px;
+      color:#FFC035;
+    }
+
+    .secline{
+      font-weight: 600;
+      font-size: 12px;
+      color: #808080;
+    }
+
+    
+    .explore{
+      font-weight: 600;
+      font-size: 17px;
+      padding-top: 100px;
+    }
+
+    .explore a{
+      text-decoration: none;
+    }
+
+    #flex_pic{
+        width: 50%;
+    }
+    .demo_button{
+        display: flex;
+        justify-content:space-around;
+        background-image: url("https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/foot_background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 10px;
+
+    }
+
+    #demo_note{
+        font-weight: 700;
+        font-size: 28px;
+        color: #212529;
+
+    }
+
+    .tel a{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 17px;
+        color:#212529
+    }
+
+    .reach_out{
+        display: flex;
+        justify-content:space-around;
+        margin: 20px;
+    }
+
+    .contact {
+        display: flex;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .contact a:hover{
+        transform: scale(1.1);
+        transition: transform 0.4s ease;
+        cursor: pointer;  
+    }
+
+    .location p{
+        padding-left: 20px;
+    }
+
+    .custom_line {
+    width: 90%;
+    margin: 20px auto;
+    border-top: 1px solid #808080;
+  }
+
+  .page4 a{
+    text-decoration: none;
+    color: #A1A8B0;
+  }
+
+  .page4{
+    display:flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 20px;
+    font-weight: 600;
+    font-size: 17px;
+
+  }
+
+  .page4 a:hover{
+            transform: scale(1.1);
+        transition: transform 0.4s ease;
+        cursor: pointer; 
+  }
+    
+    
+    footer {
+      text-align: center;
+      background-color: #F3F5F9;
+      padding: 30px;
+    
+    }
+
+          @media (max-width: 768px) {
+      body{
+        display: flex;
+        justify-content:space-around;
+      }
+      .main {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .main-text h1 {
+        font-size: 2rem;
+      }
+
+      /* nav {
+        display: none;
+    } */
+    #demo_note{
+        font-size: medium;
+        padding-left: 100px;
+    }
+
+}
+
+
+  </style>
+  
+</head>
+<body>
+    <div>
+        <div class="page1">
+            <header>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/logo.png"style="width: 100px;" alt="logo" />
+                <nav>
+                    <a href="#">Platform</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Company</a>
+                    <a href="#">Learn</a>
+                    <a href="#">Partnerships</a>
+                </nav>
+                <div>
+                    <button class="btn btn-outline-primary">Sign In</button>
+                    <button class="btn btn-primary">Request a Demo</button>
+                </div>
+            </header>
+
+            <section class="main">
+                <div class="main-text">
+                    <h1 style="color:#000000">Streamline your <br><span style="color:#536DFE;">HR processes with all in one</span></h1>
+                    
+                    <button class="btn" style="background-color: #FFB400; color:#fff; width:200px; border-radius:10px; margin-top:10px;margin-left:10px; height:50px;">Here's how</button>
+                </div>
+                <div class="main-img">
+                    <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/demo.png" alt="main Screenshot" />
+                </div>
+            </section>
+
+            <section class="logos">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/paybyphone-logo%202.png" alt="Pay by Phone">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/canada-drives-logo%202.png" alt="Canada drivers">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/david-suzuki-foundation-logo%202.png" alt="David Suzuki Foudation">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/northern-credit-union-logo%202.png" alt="Northern Credit Union">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/moosehead-breweries-logo%202.png" alt="Moosehead Breweries">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/booster-juice-logo%202.png" alt="Booster Juice">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/starbucks-logo%202.png" alt="Starbucks">
+            </section>
+
+            <section>
+                <p class="section-title">Together in one place.</p>
+                <p class="section-content"> Give your team everything they need and want in one intuitive people-management platform.</p>
+            </section>
+        </div>
+        <div class="page2">
+            <section class="frames">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/Frame%201.png" alt="Employee Benefits">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/Frame%202.png" alt="Payroll">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/Frame%203.png" alt="HR">
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/Frame%204.png" alt="Time Management">
+            </section>
+
+            <section class="employee">
+                <p>
+                    We make every stage of the <br> employee experience <br> better.
+                </p>
+            </section>
+                <div class="flex_left">
+                <section >
+                <p class="top">
+                     <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/data_loss_prevention.png" alt="Recruiting" > Recruiting
+                </p>
+                <p class="firstline">Find your next hire, faster.</p>
+                <p class="secline">People power business. We make it beyond simple for you <br> to recruit, evaluate, and hire the very best people.</p>
+                <p class="explore">
+                    <a href="#">Explore More &rarr;</a>
+                </p>
+            </section>
+            <section>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/image%202.png" alt="Recruiting" style="height: 355px;width:355px " class="flex_pic">  
+            </section>
+
+
+        </div>
+            <div class="flex_right">
+            <section>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/image%203.png" alt="Onboarding"  style="height: 355px;width:355px" class="flex_pic">  
+            </section>
+            <section >
+                <p class="top">
+                    Onboarding <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/person_add.png" alt="Onboarding">
+                </p>
+                <p class="firstline">Roll out the welcome mat.</p>
+                <p class="secline">Help new hires get up to speed, learn your culture, and become <br> part of the team in less time—and with less paperwork.</p>
+                <p class="explore">
+                    <a href="#">Explore More &rarr;</a>
+                </p>
+            </section>
+
+        </div>
+
+                <div class="flex_left">
+                <section >
+                <p class="top">
+                     <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/acute.png" alt="Time Off"> Time off
+                </p>
+                <p class="firstline">Request time off in no time.</p>
+                <p class="secline">Employees can view their balances and request time off anytime,<br> anywhere. You just approve in a snap.</p>
+                <p class="explore">
+                    <a href="#">Explore More &rarr;</a>
+                </p>
+            </section>
+            <section>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/image%204.png" alt="Time off" style="height: 355px;width:355px " class="flex_pic">  
+            </section>
+
+
+        </div>
+            <div class="flex_right">
+            <section>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/image%205@2x.png" alt="Schedule"  style="height: 355px;width:355px" class="flex_pic">  
+            </section>
+            <section >
+                <p class="top">
+                    Scheduling <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/event_note.png" alt="Scheduling">
+                </p>
+                <p class="firstline">Spend more time on growing your business.</p>
+                <p class="secline">Let teams manage their own schedules and shifts.<br> With compliance built-in, all you have to do is approve.</p>
+                <p class="explore">
+                    <a href="#">Explore More &rarr;</a>
+                </p>
+            </section>
+
+        </div>
+
+        </div>
+                <div class="flex_left">
+                <section >
+                <p class="top">
+                     <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/hotel_class.png" alt="performance"> Performance
+                </p>
+                <p class="firstline">Help your employees grow.</p>
+                <p class="secline">Employees are your lifeblood. Show them the value of their <br>contributions with timely, transparent reviews.</p>
+                <p class="explore">
+                    <a href="#">Explore More &rarr;</a>
+                </p>
+            </section>
+            <section>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/image%206.png" alt="performance" style="height: 355px;width:355px " class="flex_pic" >  
+            </section>
+
+
+        </div>
+        <div class="flex_right">
+            <section>
+                <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/image%207.png" alt="payroll" style="height: 355px;width:355px " class="flex_pic">   
+            </section>
+            <section >
+                <p class="top">
+                    Payroll <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/paid.png" alt="payroll" >
+                </p>
+                <p class="firstline">Run payroll from anywhere.</p>
+                <p class="secline">Pay employees accurately and on time. Get unlimited pay runs,<br>less manual work, and 100% compliance.</p>
+                <p class="explore">
+                    <a href="#">Explore More &rarr;</a>
+                </p>
+            </section>
+
+        </div>
+
+        <div class="page3">
+            <section class="demo_button">
+                <button class="btn btn-primary">Book a Demo</button>
+                <p id="demo_note">Give your employees, and yourself, the experience we all deserve.</p>
+            </section>
+            <section class="reach_out">
+                <div class="tel">
+                    <a href="tel:1-888-393-3483">Talk to sales - 1-888-393-3483</a>
+                </div>
+                <div class="contact">
+                    <a href="#" target="_blank">
+                        <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/linkedin.png" alt="LinkedIn" >
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/instagram.png" alt="Instagram" >
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/facebook.png" alt="Facebook" >
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/X_twitter.png" alt="X_Twitter" >
+                    </a>
+                </div>
+                <div class="location">
+                    <a href="#" target="_blank">
+                        <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/distance.png" alt="location">
+                    </a>
+                    <p>
+                        997 Seymour St #250 <br>Vancouver, BC V6B 3M1,Canada
+                    </p>
+
+                </div>
+                </section>
+        </div>
+        <hr class="custom_line">
+        <div class="page4">
+                
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Security</a>
+                    <a href="#">Terms of Service</a>
+
+        </div>
+
+        <footer>
+            <img src="https://raw.githubusercontent.com/SAIRAMV2001/Responsive_UI_pics/main/foot_logo.png" alt="logo" style="width: 100px;height:38px;">
+
+            <p class="pvt">© 2024, Workiy Pvt. Ltd. All Rights Reserved.</p>
+        </footer>
+</div>
+</body>
+</html>
